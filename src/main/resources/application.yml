@@ -1,0 +1,21 @@
+server:
+  port: 8390
+spring:
+  redis:
+    lettuce:
+      pool:
+        max-wait: 3000
+        max-idle: 8
+        min-idle: 1
+    timeout: 3000
+  profiles:
+    active: msl
+---
+spring:
+  profiles: msl
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 461200
+    database: 0
+    timeout: 3000
