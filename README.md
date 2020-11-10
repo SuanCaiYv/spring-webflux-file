@@ -19,7 +19,7 @@ filename=[文件名];direname=[目录名];iscover=[true/false]&filename=[第二�
 ```
 
 
-- 下载文件，method-GET, url=/download/{uuid}。其中uuid是事先在内存设置好的。此属性不可为空，否则会报错。格式如下：
+- 下载文件，method=GET, url=/download/{uuid}。其中uuid是事先在内存设置好的。此属性不可为空，否则会报错。格式如下：
 ```
 [文件路径]。比如/Users/joker/Desktop/test/123.docx
 ```
